@@ -2,20 +2,24 @@
 
 //creo una variabile con un array di invitati
 
-const guests = ["Giuseppe", "Federica", "Tullio", "Daniela", "Antonella", "Pecco"];
-console.log(guests);
 
+ 
+const guests = ["Giuseppe", "Federica", "Tullio", "Daniela", "Antonella", "Pecco"];
+
+console.log(guests);
 
 //chiedo all'utente il suo nome
 
 let username = prompt("Come ti chiami?")
 
 //verifico SE appartiene alla mia lista
+const container = document.querySelector (".container");
 
 if (guests.includes(username)) {
-    alert("Puoi entrare")
+    container.innerHTML = ("Puoi entrare");
+    
 } else {
-    alert("Non puoi entrare")
+    container.innerHTML = ("Non puoi entrare");
 }
 
 //voglio che il prompt accetti anche le lettere minuscole
