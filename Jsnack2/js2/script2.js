@@ -15,6 +15,8 @@ console.log(username);
 
 //verifico SE appartiene alla mia lista
 
+
+
 //ciclo while
 
 // i = 0;
@@ -23,10 +25,10 @@ console.log(username);
 
 //     console.log("ciao");
 //     if (username == guests [i]) {
-//          alert ("porcodio");
+//          alert ("capiamo");
 //          i ++;
 //     } else {
-//          alert ("Muori oggi");
+//          alert ("Not working");
 //     }
 // }
 
@@ -58,13 +60,10 @@ for (let i = 0; i < guests.length; i++) {
     
     if (username == guests[i]) {
         found = true;
-        console.log(found);        
-    } 
-
-    if (found == true) {
-
+        console.log(found);   
         const container = document.querySelector (".container");
-        container.innerHTML = "PUOI ENTRARE";
+        container.innerHTML = "PUOI ENTRARE";     
+        
 
     } else {
         const container = document.querySelector (".container");
