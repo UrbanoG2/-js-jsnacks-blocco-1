@@ -18,22 +18,26 @@ console.log(username);
 
 
 //ciclo while
+let find = false;
 
-// i = 0;
+i = 0;
 
-// while (i < guests.length) {
+while (find == false && i < guests.length) {
 
-//     console.log("ciao");
-//     if (username == guests [i]) {
-//          alert ("capiamo");
-//          i ++;
-//     } else {
-//          alert ("Not working");
-//     }
-// }
+    console.log("ciao");
+    if (username == guests [i]) {
+        
+         find = true;
+         alert ("Trovato");
+         ;
+    } else {
+         alert ("Non trovato");
+    }
+
+    i++;
+}
 
 
-//NON FINITO.
 
 
 
@@ -52,23 +56,23 @@ console.log(username);
 //ciclo for
 
 
-let found = false;
+// let found = false;
 
-let message = "Non puoi entrare"
+// let message = "Non puoi entrare"
 
-for (let i = 0; i < guests.length; i++) {
+// for (let i = 0; i < guests.length; i++) {
     
-    if (username == guests[i]) {
-        found = true;
-        console.log(found);   
-        const container = document.querySelector (".container");
-        container.innerHTML = "PUOI ENTRARE";     
+//     if (username == guests[i]) {
+//         found = true;
+//         console.log(found);   
+//         const container = document.querySelector (".container");
+//         container.innerHTML = "PUOI ENTRARE";     
         
 
-    } else {
-        const container = document.querySelector (".container");
-        container.innerHTML = "NON PUOI ENTRARE";
-    }
+//     } else {
+//         const container = document.querySelector (".container");
+//         container.innerHTML = "NON PUOI ENTRARE";
+//     }
 
-}    
+// }    
 
